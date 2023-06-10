@@ -5,7 +5,6 @@ rm -rf bg
 rm -rf blazegraph.jar
 
 echo Building the Blazegraph custom jar
-find .
 
 echo Unpack the Blazegraph jar
 mkdir -p bg
@@ -27,6 +26,7 @@ zip -q -r ../blazegraph.jar .
 cd ..
 
 echo Copy the jar
-cp blazegraph.jar /home/vlad/bb/blazegraph.jar
+cp blazegraph.jar /opt/blazegraph/blazegraph.jar
+mkdir -p /opt/blazegraph/data
 
 
